@@ -1078,22 +1078,34 @@ section {
 
     .box_content2 a:link {
         color: white!important;
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
         text-decoration: none!important;
+        font-size: 3vh;
+        margin-left: 1.5vw;
     }
 
     .box_content2 a:visited {
         color: white;
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
         text-decoration: none;
+        font-size: 3vh;
+        margin-left: 1.5vw;
     }
 
     .box_content2 a:hover {
         color: white !important;
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
         text-decoration: none !important;
+        font-size: 3vh;
+        margin-left: 1.5vw;
     }
 
     .box_content2 a:active {
         color: white!important;
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
         text-decoration: none!important;
+        font-size: 3vh;
+        margin-left: 1.5vw;
     }
 
     #ground {
