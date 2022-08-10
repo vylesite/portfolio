@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     function stars() {
         let count = 500;
         let night = document.querySelector('.night');
@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
     $(document).ready(function(){
 
         //force page to go back on top everytime page is refreshed
-        history.scrollRestoration = "manual"; 
+        history.scrollRestoration = "manual";
 
-        $(window).on('beforeunload', function(){ 
-            $(window).scrollTop(0); 
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
         });
 
         $(".title1").animate({
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         $(window).scroll(function() {
 
-            var scroll = $(window).scrollTop(); 
+            var scroll = $(window).scrollTop();
 
 
                 if ((scroll >= $(
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         $(".title2").animate({
                             opacity: '1'
                         }, 900);
-                      
+
                         $("#about_box3").animate({
                             top : '0',
                             opacity: '1'
@@ -94,22 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
                         $(".title3").animate({
                             opacity: '1'
                         }, 900);
-                      
+
                         $("#tech_box").animate({
                             top : '0',
                             opacity: '1'
                         }, 800);
-                        
+
                         $("#circle_line1").delay(1000).animate({
                             left : '80%',
                         }, 1500);
 
                         $("#circle_line2").delay(1000).animate({
-                            left : '80%',
+                            left : '75%',
                         }, 1500);
 
                         $("#circle_line3").delay(1000).animate({
-                            left : '75%',
+                            left : '70%',
                         }, 1500);
 
                         $("#circle_line4").delay(1000).animate({
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         console.log("technical section");
 
-                    
+
                 }
 
                 if ((scroll >= $(
@@ -135,11 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         $(".title4").animate({
                             opacity: '1'
                         }, 900);
-                      
+
                         $("#software_box").animate({
                             bottom : '0',
                             opacity : '1',
-                        }, 800);   
+                        }, 800);
 
 
                         console.log("software section");
@@ -152,18 +152,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         $(".title5").animate({
                             opacity: '1'
                         }, 900);
-                      
+
                         $("#box_content9_1").animate({
                             opacity : '1',
-                        }, 800);   
+                        }, 800);
 
                         $("#box_content9_2").delay(600).animate({
                             opacity : '1',
-                        }, 800); 
+                        }, 800);
 
                         $("#box_content9_3").delay(600).animate({
                             opacity : '1',
-                        }, 800);  
+                        }, 800);
 
                         $("#box_content9_4").animate({
                             opacity : '1',
@@ -171,11 +171,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         $("#box_content9_5").animate({
                             opacity : '1',
-                        }, 800);   
+                        }, 800);
 
                         $("#box_content9_6").delay(600).animate({
                             opacity : '1',
-                        }, 800); 
+                        }, 800);
 
                         console.log("personal section");
                 }
@@ -187,16 +187,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         $(".title6").animate({
                             opacity: '1'
                         }, 900);
-                      
+
                         $("#about_box5").animate({
                             bottom : '0',
                             opacity : '1',
-                        }, 800);   
+                        }, 800);
                 }
 
-                
 
-                
+
+
 
 
             console.log($(window).scrollTop());
@@ -206,8 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    
 
-    
+
+
 
 })
