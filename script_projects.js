@@ -141,11 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         }, 400);
 
 
-
-
-
-
-
                 }
 
                 if ((scroll >= $(
@@ -161,6 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_1_title_4 span:nth-child(5)").css("animation-delay", "0.5s");
                         $("#row_1_title_4 span:nth-child(6)").css("animation-delay", "0.6s");
 
+                        $(".extremely-box").delay(400).animate({
+                            opacity: '1',
+                        }, 800);
+
                         $("#row_2_col_1_box_5_4").delay(400).animate({
                             left : '0',
                             opacity: '1',
@@ -171,7 +170,15 @@ document.addEventListener("DOMContentLoaded", () => {
                             opacity: '1',
                         }, 800);
 
-                        $("#visit_2_2").animate({
+                        // $(".extremely-logo").delay(300).animate({
+                        //     opacity: '1',
+                        // }, 800);
+
+                        // $(".extremely-icons").delay(600).animate({
+                        //     opacity: '1',
+                        // }, 800);
+
+                        $("#visit_2_5").animate({
                             right : '0',
                             opacity: '1',
                         }, 400);

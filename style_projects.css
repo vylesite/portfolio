@@ -101,6 +101,7 @@ section {
     color: #fff;
 
     cursor: pointer;
+    transition: linear;
 }
 
 .fa-long-arrow-alt-left:hover {
@@ -986,7 +987,7 @@ font-style: normal; */
     /* text-decoration: none!important; */
 }
 
-#visit_2_2 {
+#visit_2_2, #visit_2_5 {
     position: relative;
     /* top: 50%;
     left: 50%;
@@ -1069,12 +1070,91 @@ a:active {
     object-fit: cover;
 }
 
-.orange, .extremely {
+.orange {
     position: relative;
     margin-bottom: 2vh;
 
     width: 35vw;
     height: auto;
+}
+
+.extremely-box {
+
+    opacity: 0;
+}
+
+.extremely-page {
+    position: relative;
+    margin-bottom: 2vh;
+
+    width: 35vw;
+    height: auto;
+
+    perspective: 50px;
+    -webkit-perspective: 50px;
+    -moz-perspective: 50px;
+
+    transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -webkit-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -moz-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+}
+
+.extremely-logo {
+    position: absolute;
+    top: 15%;
+    left: 0;
+
+    height: 15%;
+
+    opacity: 1;
+
+    -webkit-filter: drop-shadow(10px 5px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(10px 5px 15px rgba(0, 0, 0, 0.3));
+
+    perspective: 50px;
+    -webkit-perspective: 50px;
+    -moz-perspective: 50px;
+
+    transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -webkit-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -moz-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+}
+
+.extremely-icons {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    transform: translateX(-50%);
+
+    height: 26%;
+    width: 95%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    opacity: 1;
+
+    perspective: 50px;
+    -webkit-perspective: 50px;
+    -moz-perspective: 50px;
+
+    transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -webkit-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+    -moz-transform: rotateX(13deg) rotateZ(354deg) rotateY(30deg);
+}
+
+.extremely-1, .extremely-2, .extremely-3 {
+    position: relative;
+    height: 90%;
+
+    overflow: visible;
+
+    /* box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5); */
+
+    -webkit-filter: drop-shadow(10px 5px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(10px 5px 15px rgba(0, 0, 0, 0.3));
+
 }
 
 #placeholder_1 {
