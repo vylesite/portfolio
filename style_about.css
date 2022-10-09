@@ -642,6 +642,7 @@ section {
     position: relative;
 
     width: 60%;
+    height: 3.5vh;
 
     display: flex;
     justify-content: center;

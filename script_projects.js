@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
     $(document).ready(function(){
 
         //force page to go back on top everytime page is refreshed
-        history.scrollRestoration = "manual";
+        // history.scrollRestoration = "manual";
 
-        $(window).on('beforeunload', function(){
-            $(window).scrollTop(0);
-        });
+        // $(window).on('beforeunload', function(){
+        //     $(window).scrollTop(0);
+        // });
 
         // $("#row_1_title span").animate({
         //     opacity: '1'
