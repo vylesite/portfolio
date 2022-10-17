@@ -23,8 +23,8 @@
 * {
     margin: 0%;
     padding: 0%;
-    /* overflow: hidden;
-    overflow-y: hidden; */
+    /* overflow: hidden;*/
+    /* overflow-x: ; */
 }
 
 .night {
@@ -57,6 +57,95 @@
 }
 
 
+#navbar {
+    position: relative;
+    margin-top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    width: 80vw;
+    height: 7vh;
+
+    z-index: 10;
+
+    font-size: 2vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+
+
+#navbar ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: center; */
+
+    text-decoration: none;
+
+}
+
+#navbar ul li {
+    position: relative;
+    list-style: none;
+
+    text-decoration: none;
+
+    margin-left: 1vw;
+
+
+}
+
+#navbar ul li a {
+    position: relative;
+
+    font-family: 'Cocogoose', Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    text-decoration: none;
+
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 1);
+    font-smooth: subpixel-antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: subpixel-antialiased;
+
+    text-decoration: none!important;
+
+}
+
+#navbar ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover::before {
+    width: 100%;
+
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 100));
+    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.8));
+
+    text-decoration: none;
+}
+
+
 /* @keyframes animate {
     0% {
         opacity: 0;
@@ -78,7 +167,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 3vh;
+    /* padding-top: 3vh; */
     padding-bottom: 3vh;
     margin-bottom: 2vh;
 
@@ -87,7 +176,7 @@
     align-items: center;
 
     width: 80vw;
-    height: auto;
+    height: fit-content;
 
     text-align: center;
     color: #fff;
@@ -97,6 +186,7 @@
 
     font-size: 3vw;
     font-family: 'Neue Montreal Bold', Arial, Helvetica, sans-serif;
+
 }
 
 .text {
@@ -313,6 +403,158 @@ ul {
     cursor: pointer;
 }
 
+#footer {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    /* top: 90vh; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+
+    color: #fff;
+
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0,0) 0%, rgba(0,0,0,1) 100%); */
+}
+
+#social {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_social {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-icon {
+    position: relative;
+
+    color: #fff;
+
+    font-size: 3.5vh;
+    vertical-align: middle;
+}
+
+#email {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#email_icon {
+    color: white;
+    font-size: 3.5vh;
+    vertical-align: middle;
+
+}
+
+#email_mail {
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2.6vh;
+    color: #fff;
+}
+
+#email_box {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#phone {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_icon {
+    color: white;
+    font-size: 3.5vh;
+    vertical-align: middle;
+
+}
+
+#phone_number {
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2.6vh;
+    color: #fff;
+}
+
+#phone_box {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i {
+    vertical-align: middle;
+}
+
+#email_mail a:link, #phone_number a:link, #box_social a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#email_mail a:hover, #phone_number a:hover, #box_social a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+#email_mail a:visited, #phone_number a:visited, #box_social a:visited{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#email_mail a:active, #phone_number a:active, #box_social a:active {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 
 
 
@@ -321,527 +563,330 @@ ul {
 
 @media only screen and (max-width: 311px) {
 
-    #intro {
+    #navbar {
         left: 50%;
         transform: translateX(-50%);
 
-        width: 80vw;
+        width: 90vw;
 
-        overflow: visible;
+        justify-content: space-evenly;
     }
 
-    /* #title {
+    #navbar ul li {
+        margin-left: 4vw;
+    }
+
+    #navbar ul li a {
+        font-size: 3vh;
+    }
+
+    .project-title {
+        font-size: 2vh;
+    }
+
+    .text {
+        font-size: 1.2em;
         width: 85vw;
-        z-index: 10;
-
-        font-size: 3em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
     }
 
-    #tree {
-        left: 0;
-        bottom: 0;
+    .text-b {
 
-        height: auto;
+        font-size: 1.3em;
+        width: 85vw;
+
+    }
+
+    .text-i {
+        font-size: 1.1em;
+        width: 85vw;
+    }
+
+    #link .visit {
+        font-size: 1.5em;
+    }
+
+    #next-pj {
+        font-size: 1.2em;
+    }
+
+    .fa-long-arrow-alt-right {
+        font-size: 1.5em;
+        margin-right: 5vw;
+    }
+
+    iframe {
         width: 100vw;
-
-        /* transform: translateX(-90%) translateY(-90%); */
+        height: auto;
     }
 
-    #menu {
-        overflow: visible;
+
+    #footer {
+        flex-direction: column;
+        height: 12vh;
     }
 
-    ul {
-        overflow: visible;
+    #social, #email, #phone {
+        width: 70vw;
     }
 
-    ul li {
-        overflow: visible;
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
     }
 
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 2.8em;
-        margin-right: 0;
-        left: 50%;
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
-    #intro {
+    #navbar {
         left: 50%;
         transform: translateX(-50%);
 
-        width: 80vw;
+        width: 90vw;
 
-        overflow: visible;
+        justify-content: space-evenly;
     }
-/*
-    #title {
+
+    #navbar ul li {
+        margin-left: 4vw;
+    }
+
+    #navbar ul li a {
+        font-size: 3vh;
+    }
+
+    .project-title {
+        font-size: 3vh;
+    }
+
+    .text {
+        font-size: 1.2em;
         width: 85vw;
-        z-index: 10;
-
-        font-size: 4em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
     }
 
-    #tree {
-        left: 0;
-        bottom: 0;
+    .text-b {
 
-        height: auto;
+        font-size: 1.3em;
+        width: 85vw;
+
+    }
+
+    .text-i {
+        font-size: 1.1em;
+        width: 85vw;
+    }
+
+    #link .visit {
+        font-size: 1.5em;
+    }
+
+    #next-pj {
+        font-size: 1.2em;
+    }
+
+    .fa-long-arrow-alt-right {
+        font-size: 1.5em;
+        margin-right: 5vw;
+    }
+
+    iframe {
         width: 100vw;
-
-        /* transform: translateX(-90%) translateY(-90%); */
+        height: auto;
     }
 
-    #menu {
-        overflow: visible;
+
+    #footer {
+        flex-direction: column;
+        height: 12vh;
     }
 
-    ul {
-        overflow: visible;
+    #social, #email, #phone {
+        width: 70vw;
     }
 
-    ul li {
-        overflow: visible;
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
     }
 
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
-    #intro {
+    #navbar {
         left: 50%;
         transform: translateX(-50%);
 
-        width: 80vw;
+        width: 90vw;
 
-        overflow: visible;
+        justify-content: space-evenly;
     }
 
-    /* #title {
+    #navbar ul li {
+        margin-left: 4vw;
+    }
+
+    #navbar ul li a {
+        font-size: 3vh;
+    }
+
+    .project-title {
+        font-size: 3vh;
+    }
+
+    .text {
+        font-size: 1.2em;
         width: 85vw;
-        z-index: 10;
-
-        font-size: 4em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
     }
 
-    #tree {
-        left: 0;
-        bottom: 0;
+    .text-b {
 
-        height: 100%;
-        width: auto;
+        font-size: 1.3em;
+        width: 85vw;
 
-        /* transform: translateX(-90%) translateY(-90%); */
     }
 
-    #menu {
-        overflow: visible;
+    .text-i {
+        font-size: 1.1em;
+        width: 85vw;
     }
 
-    ul {
-        overflow: visible;
+    #link .visit {
+        font-size: 1.5em;
     }
 
-    ul li {
-        overflow: visible;
+    #next-pj {
+        font-size: 1.2em;
     }
 
-    ul li a {
-        font-size: 3.5em;
+    .fa-long-arrow-alt-right {
+        font-size: 1.5em;
+        margin-right: 5vw;
     }
 
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
+    iframe {
+        width: 100vw;
+        height: auto;
+    }
+
+
+    #footer {
+        flex-direction: column;
+        height: 12vh;
+    }
+
+    #social, #email, #phone {
+        width: 70vw;
+    }
+
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
+    }
+
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
-    #intro {
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 80vw;
-
-        overflow: visible;
-    }
-
-    /* #title {
-        width: 85vw;
-        z-index: 10;
-
-        font-size: 6em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
-    }
-
-    #tree {
-        left: 0;
-        bottom: 0;
-
-        height: 100%;
-        width: auto;
-
-        /* transform: translateX(-90%) translateY(-90%); */
-    }
-
-    #menu {
-        overflow: visible;
-    }
-
-    ul {
-        overflow: visible;
-    }
-
-    ul li {
-        overflow: visible;
-    }
-
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
-    }
 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
-    #intro {
+    #navbar {
         left: 50%;
         transform: translateX(-50%);
 
-        width: 80vw;
+        width: 90vw;
 
-        overflow: visible;
+        justify-content: space-evenly;
     }
 
-    /* #title {
+    #navbar ul li {
+        margin-left: 4vw;
+    }
+
+    #navbar ul li a {
+        font-size: 3vh;
+    }
+
+    .project-title {
+        font-size: 3vh;
+    }
+
+    .text {
+        font-size: 1.2em;
         width: 85vw;
-        z-index: 10;
-
-        font-size: 6em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
     }
 
-    #tree {
-        left: 0;
-        bottom: 0;
+    .text-b {
 
+        font-size: 1.3em;
+        width: 85vw;
+
+    }
+
+    .text-i {
+        font-size: 1.1em;
+        width: 85vw;
+    }
+
+    #link .visit {
+        font-size: 1.5em;
+    }
+
+    #next-pj {
+        font-size: 1.2em;
+    }
+
+    .fa-long-arrow-alt-right {
+        font-size: 1.5em;
+        margin-right: 5vw;
+    }
+
+    iframe {
+        width: 100vw;
         height: auto;
-        width: 100%;
-
-        /* transform: translateX(-90%) translateY(-90%); */
     }
 
-    #menu {
-        overflow: visible;
+
+    #footer {
+        flex-direction: column;
+        height: 12vh;
     }
 
-    ul {
-        overflow: visible;
+    #social, #email, #phone {
+        width: 70vw;
     }
 
-    ul li {
-        overflow: visible;
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
     }
 
-    ul li a {
-        font-size: 3.5em;
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
-    }
 
 }
 
 
 
-/* @media only screen and (min-width: 1025px) and (orientation: landscape) {
-
-    #intro {
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 80vw;
-
-        overflow: visible;
-    }
-
-    #title {
-        width: 85vw;
-        z-index: 10;
-
-        font-size: 6em;
-
-        text-align: center;
-
-    }
-
-    #ground {
-        bottom: 0;
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
-    }
-
-    #tree {
-        left: 0;
-        bottom: 0;
-
-        height: 100%;
-        width: auto;
-
-    }
-
-    #menu {
-        overflow: visible;
-    }
-
-    ul {
-        overflow: visible;
-    }
-
-    ul li {
-        overflow: visible;
-    }
-
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
-    }
-
-} */
-
 @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1025px) and (orientation: landscape) {
 
-    * {
-        margin: 0%;
-        padding: 0%;
-    }
 
-    #intro {
-        /* top: -10vh;
-        left: 50%;
-        transform: translateX(-50%);
-
-        width: 80vw; */
-
-        overflow: visible;
-        transform: scale(0.85);
-    }
-
-    /* #title {
-        width: 85vw;
-        z-index: 10;
-
-        font-size: 6em;
-
-        text-align: center;
-    } */
-
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
-    }
-
-    #tree {
-        left: 0;
-        bottom: 0;
-
-        height: auto;
-        width: 50vw;
-
-        /* transform: translateX(-90%) translateY(-90%); */
-    }
-
-
-
-    #menu {
-        overflow: visible;
-    }
-
-    ul {
-        overflow: visible;
-    }
-
-    ul li {
-        overflow: visible;
-    }
-
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
-    }
 
 }
 
 @media screen and (min-resolution: 192dpi) and (orientation: landscape) {
-    /* #intro {
-        left: 50%;
-        transform: translateX(-50%);
 
-        width: 80vw;
-
-        overflow: visible;
-    } */
-
-    /* #title {
-        width: 85vw;
-        z-index: 10;
-
-        font-size: 6em;
-
-        text-align: center;
-
-    } */
-
-    #ground {
-        bottom: 0;
-        /* width: 100%; */
-
-        height: 7vh;
-        width: auto;
-
-        overflow: visible;
-    }
-
-    #tree {
-        left: 0;
-        bottom: 0;
-
-        height: auto;
-        width: 50vw;
-
-        /* transform: translateX(-90%) translateY(-90%); */
-    }
-
-    #menu {
-        overflow: visible;
-    }
-
-    ul {
-        overflow: visible;
-    }
-
-    ul li {
-        overflow: visible;
-    }
-
-    ul li a {
-        font-size: 3.5em;
-    }
-
-    #name {
-        font-size: 3.5em;
-        margin-right: 0;
-        left: 50%;
-    }
 }

@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: 'Neue Montreal Light';
+    src: url(fonts/PPNeueMontreal-Thin.otf);
+}
+
+@font-face {
     font-family: 'Haguiesta';
     src: url(fonts/Haguiesta.otf);
 }
@@ -278,6 +283,155 @@ ul li a:hover::before {
     text-decoration: none;
 }
 
+#footer {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    top: 90vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+
+    color: #fff;
+}
+
+#social {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_social {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-icon {
+    position: relative;
+
+    color: #fff;
+
+    font-size: 3.5vh;
+    vertical-align: middle;
+}
+
+#email {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#email_icon {
+    color: white;
+    font-size: 3.5vh;
+    vertical-align: middle;
+
+}
+
+#email_mail {
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2.6vh;
+    color: #fff;
+}
+
+#email_box {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#phone {
+    position: relative;
+    width: 33%;
+    height: 100%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone_icon {
+    color: white;
+    font-size: 3.5vh;
+    vertical-align: middle;
+
+}
+
+#phone_number {
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2.6vh;
+    color: #fff;
+}
+
+#phone_box {
+    position: relative;
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i {
+    vertical-align: middle;
+}
+
+#email_mail a:link, #phone_number a:link, #box_social a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#email_mail a:hover, #phone_number a:hover, #box_social a:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+#email_mail a:visited, #phone_number a:visited, #box_social a:visited{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#email_mail a:active, #phone_number a:active, #box_social a:active {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 /* #moon_about {
     position: fixed;
 
@@ -298,7 +452,7 @@ ul li a:hover::before {
 
 /*----------------------------------------- Mobile-----------------------------*/
 
-@media only screen and (max-width: 311px) {
+@media only screen and (max-width: 319px) {
 
     #intro {
         left: 50%;
@@ -361,7 +515,14 @@ ul li a:hover::before {
         left: 50%;
     }
 
+    #footer {
+        flex-direction: column;
+    }
+
 }
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -378,7 +539,7 @@ ul li a:hover::before {
         width: 85vw;
         z-index: 10;
 
-        font-size: 4em;
+        font-size: 5vh;
 
         text-align: center;
 
@@ -406,6 +567,7 @@ ul li a:hover::before {
 
     #menu {
         overflow: visible;
+        font-size: 2vh;
     }
 
     ul {
@@ -421,9 +583,27 @@ ul li a:hover::before {
     }
 
     #name {
-        font-size: 3.5em;
+        font-size: 5vh;
         margin-right: 0;
         left: 50%;
+    }
+
+    #footer {
+        flex-direction: column;
+        top: 87vh;
+        height: 12vh;
+    }
+
+    #social, #email, #phone {
+        width: 70vw;
+    }
+
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
+    }
+
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }
@@ -463,8 +643,8 @@ ul li a:hover::before {
         left: 0;
         bottom: 0;
 
-        height: 100%;
-        width: auto;
+        /* height: 100%; */
+        width: 100%;
 
         /* transform: translateX(-90%) translateY(-90%); */
     }
@@ -489,6 +669,24 @@ ul li a:hover::before {
         font-size: 3.5em;
         margin-right: 0;
         left: 50%;
+    }
+
+    #footer {
+        flex-direction: column;
+        top: 87vh;
+        height: 12vh;
+    }
+
+    #social, #email, #phone {
+        width: 70vw;
+    }
+
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
+    }
+
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }
@@ -619,6 +817,24 @@ ul li a:hover::before {
         font-size: 3.5em;
         margin-right: 0;
         left: 50%;
+    }
+
+    #footer {
+        flex-direction: column;
+        top: 87vh;
+        height: 12vh;
+    }
+
+    #social, #email, #phone {
+        width: 70vw;
+    }
+
+    #phone_number, #email_mail {
+        font-size: 2.2vh;
+    }
+
+    .social-icon, #email_icon, #phone_icon {
+        font-size: 2.3vh;
     }
 
 }

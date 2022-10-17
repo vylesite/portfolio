@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
     $(document).ready(function(){
 
         //force page to go back on top everytime page is refreshed
-        // history.scrollRestoration = "manual";
+        history.scrollRestoration = "manual";
 
-        // $(window).on('beforeunload', function(){
-        //     $(window).scrollTop(0);
-        // });
+        $(window).on('beforeunload', function(){
+            $(window).scrollTop(0);
+        });
 
         // $("#row_1_title span").animate({
         //     opacity: '1'
@@ -54,12 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
         $("#row_2_col_1_box_1").delay(400).animate({
             left : '0',
             opacity: '1',
-        }, 800);
+        }, 650);
 
-        $("#row_2_col_1_box_2").delay(1000).animate({
+        $("#row_2_col_1_box_2").delay(700).animate({
             right : '0',
             opacity: '1',
-        }, 800);
+        }, 650);
 
         $("#visit_1").animate({
             opacity: '1',
@@ -71,10 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             var scroll = $(window).scrollTop();
 
+                if ((scroll >= $('#pj_2').offset().top) && (scroll < $('#pj_2').offset().top) + 1) {
 
-                if ((scroll >= $(
-                    '.pj-2').offset().top) && (scroll < $('.pj-2').offset().top) + 1) {
-
+                        $(".scrolldown span").css("display", "none");
                         $("#row_1_title_2").fadeTo(400, 1);
                         $("#row_1_title_2 span").css("animation", "slide-up 0.8s ease-in-out both");
                         $("#row_1_title_2 span:nth-child(1)").css("animation-delay", "0.1s");
@@ -94,27 +93,22 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_2_col_1_box_3").delay(400).animate({
                             bottom : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
                         $("#row_2_col_1_box_4").delay(1000).animate({
                             bottom : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
                         $("#visit_2_1").delay(1800).animate({
                             opacity: '1',
                             TextDecoder : 'none',
                         }, 400);
 
-
-
-
-
-
                   }
 
                 if ((scroll >= $(
-                    '.pj-3').offset().top) && (scroll < $('.pj-3').offset().top) + 1) {
+                    '#pj_3').offset().top) && (scroll < $('#pj_3').offset().top) + 1) {
 
                         $("#row_1_title_3").fadeTo(400, 1);
                         $("#row_1_title_3 span").css("animation", "slide-up 0.8s ease-in-out both");
@@ -128,12 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_2_col_1_box_5").delay(400).animate({
                             left : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
-                        $("#row_2_col_1_box_6").delay(1000).animate({
+                        $("#row_2_col_1_box_6").delay(700).animate({
                             right : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
                         $("#visit_2_2").animate({
                             right : '0',
@@ -144,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 if ((scroll >= $(
-                    '.pj-4').offset().top) && (scroll < $('.pj-4').offset().top) + 1) {
+                    '#pj_4').offset().top) && (scroll < $('#pj_4').offset().top) + 1) {
 
 
                         $("#row_1_title_4").fadeTo(400, 1);
@@ -163,12 +157,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_2_col_1_box_5_4").delay(400).animate({
                             left : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
-                        $("#row_2_col_1_box_6_4").delay(1000).animate({
+                        $("#row_2_col_1_box_6_4").delay(700).animate({
                             right : '0',
                             opacity: '1',
-                        }, 800);
+                        }, 650);
 
                         // $(".extremely-logo").delay(300).animate({
                         //     opacity: '1',
@@ -187,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 if ((scroll >= $(
-                    '.pj-5').offset().top) && (scroll < $('.pj-5').offset().top) + 1) {
+                    '#pj_5').offset().top) && (scroll < $('#pj_5').offset().top) + 1) {
 
                         $("#row_1_title_5").fadeTo(400, 1);
                         $("#row_1_title_5 span").css("animation", "slide-up 0.8s ease-in-out both");
@@ -222,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_2_col_7_box_3").delay(200).animate({
                             left : '0',
                             opacity : '1',
-                        }, 800)
+                        }, 650)
 
                         $("#visit_2_4").delay(800).animate({
                             opacity : '1',
@@ -234,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 if ((scroll >= $(
-                    '.pj-6').offset().top) && (scroll < $('.pj-6').offset().top) + 1) {
+                    '#pj_6').offset().top) && (scroll < $('#pj_6').offset().top) + 1) {
 
                         $("#row_1_title_6").fadeTo(400, 1);
                         $("#row_1_title_6 span").css("animation", "slide-up 0.8s ease-in-out both");
@@ -268,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         $("#row_2_col_7_box_2").delay(200).animate({
                             left : '0',
                             opacity : '1',
-                        }, 800)
+                        }, 650)
 
                         $("#visit_2_3").delay(800).animate({
                             opacity : '1',
