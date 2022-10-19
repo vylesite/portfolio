@@ -189,12 +189,95 @@
 
 }
 
+.row {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: fit-content;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    z-index: 100;
+/*
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh; */
+}
+
+.text-big-left {
+    position: relative;
+    width: 42vw;
+    margin-right: 3vw;
+    left: 0;
+
+    z-index: 100;
+
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+.text-big-right {
+    position: relative;
+    width: 42vw;
+    margin-left: 3vw;
+    right: 0;
+
+    z-index: 100;
+
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
 .text {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
+    width: 90vw;
     height: fit-content;
+
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+
+    z-index: 100;
+
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: left;
+}
+
+.text-left {
+    position: relative;
+    width: 42vw;
+    margin-right: 3vw;
+    height: fit-content;
+
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+
+    z-index: 100;
+
+    font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: left;
+}
+
+.text-right {
+    position: relative;
+    width: 42vw;
+    height: fit-content;
+    margin-left: 3vw;
 
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
@@ -211,7 +294,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
+    width: 90vw;
     height: fit-content;
 
     margin-top: 1vh;
@@ -230,16 +313,16 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
+    width: 90vw;
     height: fit-content;
 
-    margin-top: 1.5vh;
-    margin-bottom: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 
     z-index: 100;
 
     font-family: 'Neue Montreal', Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
+    font-size: 1.7em;
     color: #fff;
     text-align: left;
 }
@@ -264,7 +347,7 @@ ul {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
+    width: 90vw;
     height: auto;
 
     z-index: 100;
@@ -272,6 +355,27 @@ ul {
     margin-top: 2vh;
 
 }
+
+.image1 {
+    position: relative;
+    width: 45vw;
+    height: auto;
+
+    z-index: 100;
+
+    margin-top: 2vh;
+}
+
+.image2 {
+    position: relative;
+    width: 45vw;
+    height: auto;
+
+    z-index: 100;
+
+    margin-top: 2vh;
+}
+
 
 #wood1, #wood2, #wood3, .extr-1{
     position: relative;
@@ -715,6 +819,34 @@ i {
         font-size: 2.3vh;
     }
 
+    .row {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .text-left, .text-right, .text-big-left, .text-big-right {
+        position: relative;
+
+        width: 90vw;
+        height: fit-content;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        z-index: 100;
+
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -791,6 +923,34 @@ i {
 
     .social-icon, #email_icon, #phone_icon {
         font-size: 2.3vh;
+    }
+
+    .row {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .text-left, .text-right, .text-big-left, .text-big-right {
+        position: relative;
+
+        width: 90vw;
+        height: fit-content;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        z-index: 100;
+
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+
     }
 
 }
@@ -874,6 +1034,34 @@ i {
 
     .social-icon, #email_icon, #phone_icon {
         font-size: 2.3vh;
+    }
+
+    .row {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .text-left, .text-right, .text-big-left, .text-big-right {
+        position: relative;
+
+        width: 90vw;
+        height: fit-content;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        z-index: 100;
+
+        font-family: 'Neue Montreal Light', Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+
     }
 
 
