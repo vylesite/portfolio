@@ -76,6 +76,9 @@
     justify-content: right;
     align-items: center;
 
+    display: -webkit-flex;
+    -ms-flex-direction: row;
+
     text-align: center;
 
     text-decoration: none;
@@ -93,6 +96,9 @@
     /* text-align: center; */
 
     text-decoration: none;
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 
 }
 
@@ -175,6 +181,8 @@
     justify-content: center;
     align-items: center;
 
+    display: -webkit-flex;
+
     width: 80vw;
     height: fit-content;
 
@@ -205,6 +213,9 @@
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 
     z-index: 100;
 /*
@@ -341,6 +352,8 @@ ul {
 
     display: flex;
     justify-content: center;
+
+    display: -webkit-flex;
 }
 
 .image {
@@ -407,6 +420,8 @@ ul {
 
     display: flex;
     justify-content: center;
+
+    display: -webkit-flex;
 }
 
 #link .visit {
@@ -439,6 +454,9 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 }
 
 #pj {
@@ -490,6 +508,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: -webkit-flex;
 }
 
 #next_pj {
@@ -518,6 +538,9 @@ ul {
     justify-content: center;
     align-items: center;
 
+    display: -webkit-flex;
+    -ms-flex-direction: row;
+
     z-index: 100;
 
     color: #fff;
@@ -538,6 +561,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 }
 
 #box_social {
@@ -548,6 +574,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    display: -webkit-flex;
 }
 
 .social-icon {
@@ -571,6 +599,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 }
 
 #email_icon {
@@ -594,6 +625,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    display: -webkit-flex;
 }
 
 
@@ -610,6 +643,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    display: -webkit-flex;
+    -ms-flex-direction: row;
 }
 
 #phone_icon {
@@ -633,6 +669,8 @@ ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    display: -webkit-flex;
 }
 
 i {
